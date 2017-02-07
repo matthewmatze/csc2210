@@ -1,0 +1,7 @@
+function choice(form){
+	$.post('choice.php',{"choice":form.defect.value
+	}, function(ResData){
+   	window.location.href='wait.html';
+   });
+	return false;
+}

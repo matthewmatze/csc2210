@@ -1,0 +1,155 @@
+@charset "UTF-8";
+body{
+    background-color:grey;
+}
+h1
+{
+	text-align:center;
+}
+h2
+{
+	text-align:center;
+}
+#info{
+	float:left;
+	height:20%;
+	width:100%;
+}
+#home{
+	float:left;
+	height:100%;
+	width:100%;
+}
+#join{
+	float:left;
+	height:100%;
+	width:100%;
+}
+#create{
+	float:left;
+	height:100%;
+	width:100%;
+}
+#title{
+	float:left;
+	margin-left:10%;
+	text-align:center;
+	width:80%;
+	height:13%;	
+}
+#titletext{
+	text-decoration:none;
+	text-align:center;
+	text-size:100%;
+	float:left;
+	height:100%;
+	width:100%;
+	
+}
+#buttonsec{
+	float:left;
+	margin-left:10%;
+	width:80%;
+	height:10%;
+}
+#homebutton{
+	float:left;
+	width:80%;
+	height:10%;
+}
+#leftbutton{
+	text-decoration:none;
+	text-align:center;
+	padding-top:2.5%;
+	font-size:90%;
+	float:left;
+	display:inline-block;
+	background-color:black;
+	color:white;
+	width:35%;
+	height:80%;	
+}
+#rightbutton{
+	text-decoration:none;
+	text-align:center;
+	padding-top:2.5%;
+	font-size:90%;
+	float:right;
+	display:inline-block;
+	background-color:white;
+	color:black;
+	width:35%;
+	height:80%;	
+}
+#homebutton{
+	text-decoration:none;
+	text-align:center;
+	margin-left:30%;
+	margin-right:30%;
+	padding-top:.5%;
+	font-size:20px;
+	float:left;
+	display:inline-block;
+	background-color:cyan;
+	color:black;
+	width:40%;
+	height:10%;	
+}
+#leftbutton:hover{
+	text-decoration:none;
+	text-align:center;
+	padding-top:2.5%;
+	font-size:90%;
+	float:left;
+	display:inline-block;
+	background-color:green;
+	color:black;
+	width:35%;
+	height:80%;	
+}
+#rightbutton:hover{
+	text-decoration:none;
+	text-align:center;
+	padding-top:2.5%;
+	font-size:90%;
+	float:right;
+	display:inline-block;
+	background-color:green;
+	color:black;
+	width:35%;
+	height:80%;	
+}
+#homebutton:hover{
+	text-decoration:none;
+	text-align:center;
+	padding-top:.5%;
+	margin-left:30%;
+	margin-right:30%;
+	font-size:20px;
+	float:left;
+	display:inline-block;
+	background-color:green;
+	color:black;
+	width:40%;
+	height:10%;	
+}
+#description{
+	float:left;
+	text-align:left;	
+	width:80%;
+	margin-left:10%;
+}
+#joinsec{
+	float:left;
+	margin-left:10%;
+	width:60%;
+	height:60%;
+	margin-bottom:10%;
+}
+#createsec{
+	float:left;
+	margin-left:10%;
+	width:80%;
+	height:90%;
+	margin-bottom:10%;
+}

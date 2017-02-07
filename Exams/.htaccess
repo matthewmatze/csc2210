@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "csc2210 - Exams"
+AuthUserFile /home/students/mmatze/public_html/csc2210/Exams/.htpasswd
+require valid-user

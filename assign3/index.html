@@ -1,0 +1,92 @@
+<!--Name: Matthew Matze
+    Date: 2-9-2015
+    Class:CSC-2210
+    Location: ~/public_html/csc2210/assign3
+   -->
+<html>
+	<head>
+		<title>Assign 3</title>
+			<link href="../include/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+			<script type="text/javascript" src="../include/jquery-2.1.3.js"></script>
+			<script type="text/javascript" src="../include/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+			<script type="text/javascript" src="validate.js"></script>
+	</head>
+	<body>
+		<div data-role="page" id="login" name="login">
+			<div data-role="header">
+				<h1>Login</h1>
+			</div>
+			<form action="#" method="post" data-ajax="false" name="loginEntry" id="loginEntry" onSubmit="return checkLogin(this);">
+				<div data-role="fieldcontain">
+					<div data-role="fieldcontain">
+						<label for="loginEmail">Email: </label>
+						<input type="text" name="loginEmail" id="loginEmail" value="" />
+					</div>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="loginPassword">Password:</label>
+					<input type="password" name="loginPassword" id="loginPassword" value="" />
+				</div>
+				<div data-role="fieldcontain">
+					<input type="submit" name="loginSubmit" id="loginSubmit" value="Send" />
+				</div>
+			</form>
+			<div data-role="fieldcontain" id="createAccount">
+         	<p>If you don't have an account then create one on
+					<a href="#formEntry">this page</a>.
+				</p>
+      	</div>
+			<div id="name"></div>
+		</div>
+		<div data-role="page" id="formEntry">
+			<div data-role="header">
+				<h1>Create Account</h1>
+	         <a href="#login" data-ajax="false" id="btnLogin"> Login </a>
+			</div>
+			<div data-role="content">
+				<form action="#" method="post" id="personEntry" name="personEntry" onSubmit="return checkForm(this);">
+					<div data-role="fieldcontain">
+						<label for="fname">First:</label>
+						<input type="text" name="fname" id="fname" value="" />
+					</div>
+					<div data-role="fieldcontain">
+						<label for="lname">Last:</label>
+						<input type="text" name="lname" id="lname" value="" />
+					</div>
+					<div data-role="fieldcontain">
+						<label for="age">Age: </label>
+						<input type="text" name="age" id="age" value="" />
+					</div>
+					<div data-role="fieldcontain">
+						<label for="email">Email: </label>
+						<input type="text" name="email" id="email" value="" />
+					</div>
+					<div data-role="fieldcontain">
+						<select name="year">
+							<option value="">Select Year</option>
+							<option value="Freshman">Freshman</option>
+							<option value="Sophmore">Sophmore</option>
+							<option value="Junior">Junior</option>
+							<option value="Senior">Senior</option>
+						</select>
+					</div>
+					<div data-role="fieldcontain">
+						Male<input type="radio" name="gender" id="gender" value="male" checked="checked"/>
+						Female<input type="radio" name="gender" id="gender" value="female" />
+						Other<input type="radio" name="gender" id="gender" value="other" />
+					</div>
+					<div data-role="fieldcontain">
+						<label for="password">Password:</label>
+						<input type="password" name="password" id="password" value="" />
+					</div>
+					<div data-role="fieldcontain">
+						<input type="submit" name="submit" value="Send" />
+					</div>
+				</form>
+			</div>
+			<div data-role="footer">
+				<span style="font-size: .7em">Copyleft Stump Productions&copy; 2015</span>
+			</div>
+		</div>
+	</body>
+</html>

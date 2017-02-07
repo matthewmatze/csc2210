@@ -1,0 +1,86 @@
+<!--Name: Matthew Matze
+    Date: 2-9-2015
+    Class:CSC-2210
+    Location: ~/public_html/csc2210/Exams1
+   -->
+<html>
+	<head>
+		<title>Exam 1</title>
+			<script type="text/javascript" src="../include/jquery-1.11.2.js"></script>
+			<link href="../include/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+			<script type="text/javascript" src="../include/jquery.mobile-1.4.5.min.js"></script>
+			<script type="text/javascript" src="validate.js"></script>
+			<style>
+			#pad {
+				width:30%;
+				display:inline-block;
+			}
+			#row{
+				width:100%;
+				display:inline-block;
+			}
+			</style>
+	</head>
+	<body>
+		<div data-role="page" id="formEntry">
+			<div data-role="header">
+				<h1>Exam 1</h1>
+			</div>
+			<div data-role="content">
+				<form action="form.php" data-ajax="false" method="post" name="DataEntry" onClick="return checkForm(this);">
+					<label for="ID">ID:</label>
+					<input type="range" name="ID" id="ID" value="50" min="0" max="100">
+					<div id="row">
+						<div data-role="fieldcontain" id="pad">
+						<input type="button" name="code" id="0" value="0" onclick="return checkForm(this)">
+						</div>
+						<div data-role="fieldcontain" id="pad">
+						<input type="button" name="code" id="1" value="1" onclick="return checkForm(this)">
+						</div>
+						<div data-role="fieldcontain" id="pad">
+						<input type="button" name="code" id="2" value="2" onclick="return checkForm(this)">
+						</div>
+					</div>
+						<br>
+					<div id="row">
+						<div data-role="fieldcontain" id="pad">
+							<input type="button" name="code" id="3" value="3" onclick="return checkForm(this)">
+						</div>
+						<div data-role="fieldcontain" id="pad">
+							<input type="button" name="code" id="4" value="4" onclick="return checkForm(this)">
+						</div>
+						<div data-role="fieldcontain" id="pad">
+							<input type="button" name="code" id="5" value="5" onclick="return checkForm(this)">
+						</div>
+					</div>
+					<br>
+					<div id="row">
+						<div data-role="fieldcontain" id="pad">
+							<input type="button" name="code" id="6" value="6" onclick="return checkForm(this)">
+						</div>
+						<div data-role="fieldcontain" id="pad">
+							<input type="button" name="code" id="7" value="7" onclick="return checkForm(this)">
+						</div>
+						<div data-role="fieldcontain" id="pad">
+							<input type="button" name="code" id="8" value="8" onclick="return checkForm(this)">
+						</div>
+					</div>
+					<br>
+					<div id="row">
+						<div data-role="fieldcontain" id="pad">
+							<input type="button" name="X" id="X" value="X" onclick="return checkForm(this)">
+						</div>
+						<div data-role="fieldcontain" id="pad">
+							<input type="button" name="code" id="9" value="9" onclick="return checkForm(this)">
+						</div>
+						<div data-role="fieldcontain" id="pad">
+							<input type="submit" name="Enter" id="Enter" value="Enter" onclick="return checkForm(this)">
+						</div>
+					</div>
+				</form>
+			<div id="code">
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

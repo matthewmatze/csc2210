@@ -1,0 +1,99 @@
+<!--	Name: Matt Matze
+	Date: 1-19-2015
+	Class: csc-2210
+	Location: ../csc2210
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Prisoner's Dilemma</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link  href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+		<link href="Super_Theme.css" rel ="stylesheet" type="text/css"/>
+		<link href="Home.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="jquery-2.1.3.js"></script>
+		<script type="text/javascript" src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="validate.js"></script>
+		<!--<button>Send an HTTP POST request to a page and get the result back</button>--!>
+	</head>
+<body>
+	<div data-role="page" id="home">
+		<div data-role="header" id="title">
+			<div id="titletext">
+				The Prisoner's Dilemma<br>
+	 			The Classroom Edition
+			</div>
+		</div>
+		<div id="buttonsec">
+			<a data-role="button" href="#create" id="leftbutton">
+					<p>Create Game</p>
+			</a>
+			<a data-role="button" href="#join" id="rightbutton">
+					<p>Join Game</p>
+			</a>
+		</div>
+      <div data-role="content" id="description">
+        <h3>What is the Prisoner's Dilemma?</h3>
+        <p>		The prisoner's dilemma is a canonical example of a game analyzed in game theory that shows why two purely "rational" individuals might not cooperate, even if it appears that it is in their best interests[citation needed] to do so. It was originally framed by Merrill Flood and Melvin Dresher working at RAND in 1950. Albert W. Tucker formalized the game with prison sentence rewards and gave it the name "prisoner's dilemma" (Poundstone, 1992), presenting it as follows:
+<br>
+<br>
+    Two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of speaking to or exchanging messages with the other. The police admit they don't have enough evidence to convict the pair on the principal charge. They plan to sentence both to a year in prison on a lesser charge. Simultaneously, the police offer each prisoner a Faustian bargain. Each prisoner is given the opportunity either to betray the other, by testifying that the other committed the crime, or to cooperate with the other by remaining silent. Here's how it goes:
+</p>
+<p>
+<img src="prisoners_dilemma.jpg" alt"prisonersdilemma picture" width="80%" height="80%">
+<br>
+If A and B each betray the other, each of them serves 5 years in prison<br>
+If A betrays B but B remains silent, A will be set free and B will serve 20 years in prison (and vice versa)<br>
+If A and B both remain silent, both of them will only serve 1 year in prison (on the lesser charge)</p>
+        <h3>How is this version of the game played?</h3>
+        <p>		Our version of the game has several options for how it can be played but to start it matches up each student together with another randomly and they will choose to either defect or cooaperate. Once every player has chosen and submited their answer it will start a new round and will continue this process until the predetermined number the game creator decided upon. There are various game modes which the game creator can use. Such as a mode which shows each of the players the other players round history up to a point and that point is determined by the game creator.</p>
+        <h3>What's to come!</h3>
+        <p>In future versions we are planning on creating a indirect resiprosity evaluator where you will never play against the same player twice and you get a current reputation meter for the player you are playing with depending what they have done in their history.</p>
+      </div>
+	</div>
+	<div data-role="page" id="create">
+		<div data-role="header" id="title">
+			<div id="titletext">
+				Create the Prisoner's Dilemma
+			</div>
+		</div>
+		<div id="createsec">
+			<form method="post" id="createpost" name="createpost" onSubmit="return checkCreate(this)">
+				How many players?<br>
+				<input type="number" name="nplayers" min=2 max=100/>
+				<br>
+				How many rounds?<br>
+				<input type="number" name="nrounds" min=3 max=50/>
+				<!--<br>
+				Show previous round history?
+				<input type="checkbox" name="rhist" value="rhist"/>
+				<br>
+				if so, how many?
+				<input type="number" name="nrhist" min=1 max=50/>
+				<br>-->
+				Passcode:<br>
+				<input type="number" name="password"/>
+				<br><br>
+				<input type="submit" value="Submit"/>
+			</form>
+		</div>
+	</div>
+	<div data-role="page" id="join">
+		<div data-role="header" id="title">
+			<div id="titletext">
+			Join the Prisoner's Dilemma
+			</div>
+		</div>
+		<div id="joinsec">
+			<form method="post" name="userpost" id="userpost" onSubmit="return checkLogin(this);">
+				Enter Name:<br>
+				<input type="text" name="name"/>
+				Passcode:<br>
+				<input type="number" name="password"/>
+				<br><br>
+				<input type="submit" value="Submit"/>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
